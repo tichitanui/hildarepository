@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilda Tanui | Communication Specialist Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+         :root {
+            --primary-color: #8B2C40;
+            --text-color: #1f2937;
+            --bg-light: #f9fafb;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            background-color: white;
+            scroll-behavior: smooth;
+        }
+        
+        .cta-button {
+            background-color: var(--primary-color);
+            transition: all 0.2s;
+        }
+        
+        .cta-button:hover {
+            background-color: #6d1e2e;
+            transform: scale(1.02);
+        }
+        
+        .section-heading {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+        
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            z-index: 50;
+        }
+        
+        .menu-link {
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+        
+        .menu-link:hover {
+            border-bottom-color: white;
+        }
+        
+        .page-section {
+            padding-top: 4rem;
+            scroll-padding-top: 5rem;
+        }
+        
+        .page-section::before {
+            content: "";
+            display: block;
+            height: 5rem;
+            margin-top: -5rem;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        /* Class used by JavaScript to hide sections/elements in standalone view */
+        
+        .hidden-section {
+            display: none !important;
+        }
+        /* Class used by JavaScript to show/hide content blocks */
+        
+        .hidden-content {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-40">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+            <a href="#home" class="text-xl font-extrabold tracking-widest text-gray-900">PORTFOLIO</a>
+            <button id="menu-open-btn" class="sm:hidden p-2 rounded-lg transition hover:bg-gray-100" aria-label="Open Menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+            <div id="desktop-nav-links" class="hidden sm:flex space-x-12 text-sm font-medium">
+                <a href="#home" class="nav-link full-view-link hover:text-rose-800 transition">HOME</a>
+                <a href="#about" class="nav-link dedicated-view-link hover:text-rose-800 transition">ABOUT HILDA</a>
+                <a href="#resume" class="nav-link dedicated-view-link hover:text-rose-800 transition">RESUME</a>
+                <a href="#services" class="nav-link dedicated-view-link hover:text-rose-800 transition">COMMUNICATION SERVICES</a>
+                <a href="#cases" class="nav-link dedicated-view-link hover:text-rose-800 transition">CASE STUDIES</a>
+                <a href="#contact" class="nav-link dedicated-view-link hover:text-rose-800 transition">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-gray-900/95 transform translate-x-full flex flex-col items-center justify-center p-8 transition-transform duration-300">
+        <button id="menu-close-btn" class="absolute top-4 right-6 p-2 text-white transition hover:text-rose-400" aria-label="Close Menu">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <div class="text-center space-y-8 text-2xl font-semibold text-white">
+            <a href="#home" class="block py-4 menu-link mobile-link full-view-link">HOME</a>
+            <a href="#about" class="block py-4 menu-link mobile-link dedicated-view-link">ABOUT HILDA</a>
+            <a href="#resume" class="block py-4 menu-link mobile-link dedicated-view-link">RESUME</a>
+            <a href="#services" class="block py-4 menu-link mobile-link dedicated-view-link">COMMUNICATION SERVICES</a>
+            <a href="#cases" class="block py-4 menu-link mobile-link dedicated-view-link">CASE STUDIES</a>
+            <a href="#contact" class="block py-4 menu-link mobile-link dedicated-view-link">CONTACT</a>
+        </div>
+    </div>
+
+    <main class="pt-16">
+
+        <section id="home" class="page-section content-section relative pt-20 pb-28 md:pt-40 md:pb-60 flex items-center justify-center min-h-[500px] bg-cover bg-center" style="background-image: url('assets/deliverables/comsimage1.jpg');">
+            <div class="absolute inset-0 bg-gray-900/50"></div>
+            <div class="relative max-w-xl mx-auto text-center px-6">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Crafting connections</h1>
+                <p class="text-base md:text-lg text-white font-medium mb-8">
+                    Welcome to my portfolio! I'm <strong>Hilda Tanui</strong>, a passionate communication specialist based in Adelaide, Australia. I specialise in internal and stakeholder communication, crisis communication, and social media management.
+                    Let's connect and explore how I can help you communicate effectively. I'm excited to share my experiences with you.
+                </p>
+            </div>
+        </section>
+
+        <section id="about" class="page-section content-section max-w-7xl mx-auto px-6 py-16 md:py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="section-heading">About me</h2>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        <span class="font-bold">I am</span> a dedicated, organized, and methodical professional with an aspiring progressive career. I have good interpersonal skills, I'm an excellent team player, I'm keen and willing to learn and develop
+                        new skills. I am also reliable, dependable, and often seek new responsibilities within a wide range of employment areas.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        As a communication specialist, I bring a wealth of experience to every project. My expertise spans internal and stakeholder communication, crisis management, and social media strategy. I am dedicated to crafting compelling narratives that resonate with
+                        your audience and drive meaningful results.
+                    </p>
+                </div>
+                <div class="md:order-first">
+                    <img src="assets/deliverables/hildaimage.jpg" alt="Professional communication specialist working on laptop" class="w-full h-auto object-cover rounded-lg shadow-xl">
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="page-section content-section bg-gray-50 px-6 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto w-full">
+                <h2 class="section-heading text-center">Resume</h2>
+                <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-xl border-t-4 border-rose-800">
+
+                    <div id="resume-summary" class="resume-content-block">
+                        <h3 class="text-2xl font-bold mb-4 text-rose-800">Education (Summary)</h3>
+                        <div class="mb-4">
+                            <h4 class="text-xl font-semibold">Masters of Communication</h4>
+                            <p class="text-gray-600 italic">University of South Australia - Adelaide, SA (02/2024 – to date)</p>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-rose-800">Key Experience (Summary)</h3>
+                        <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1 mt-2 mb-6">
+                            <li>Strengthened MAA’s brand identity and communication consistency across all social media and internal channels.</li>
+                            <li>Developed and implemented a content strategy that improved engagement and follower interactions.</li>
+                            <li>Created a streamlined referral form that simplified client intake and improved response rates.</li>
+                            <li>Developed and implemented public relations campaigns for Koitaleel Samoei University College.</li>
+                        </ul>
+                        <div class="flex justify-center mt-8">
+                            <button data-target="#resume" class="dedicated-view-btn inline-block px-8 py-3 rounded-md text-white font-semibold cta-button">Request Full Resume</button>
+                        </div>
+                    </div>
+
+                    <div id="resume-full" class="resume-content-block hidden-content">
+                        <div class="mb-8 border-b pb-4">
+                            <h3 class="text-2xl font-bold mb-4 text-rose-800">Education and Training</h3>
+                            <div class="mb-4">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="text-xl font-semibold">Masters of Communication</h4>
+                                    <span class="text-sm text-gray-500 font-medium">02/2024 – to date</span>
+                                </div>
+                                <p class="text-gray-600 italic">University of South Australia - Adelaide, SA</p>
+                            </div>
+                            <div class="mb-4">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="text-xl font-semibold">B.Sc. of Communication and Public Relations</h4>
+                                    <span class="text-sm text-gray-500 font-medium">12/2021</span>
+                                </div>
+                                <p class="text-gray-600 italic">Moi University - Kenya</p>
+                            </div>
+                            <div class="mt-6">
+                                <h4 class="text-xl font-semibold mb-2">Trainings</h4>
+                                <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                                    <li>Jan - Mar 2020: Digital literacy, Coaching and Mentorship; I Choose Life - Africa.</li>
+                                    <li>Aug- Oct 2018: Hack the Big 4 Agenda.</li>
+                                    <li>May- Jun 2018: Mentorship program.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-8 border-b pb-4">
+                            <h3 class="text-2xl font-bold mb-4 text-rose-800">Professional Experience</h3>
+                            <div class="mb-6">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="text-xl font-semibold">PLACEMENT: My Ability Australia- MAA</h4>
+                                    <span class="text-sm text-gray-500 font-medium">06|2025 - 11|2025</span>
+                                </div>
+                                <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1 mt-2">
+                                    <li>Strengthened MAA’s brand identity and communication consistency across all social media and internal channels.</li>
+                                    <li>Developed and implemented a content strategy that improved engagement and follower interactions.</li>
+                                    <li>Designed visually cohesive and accessible digital materials aligned with disability-inclusive communication standards.</li>
+                                    <li>
+                                        <li>Created a streamlined referral form that simplified client intake and improved response rates.</li>
+                                        <li>Conducted competitor analysis that informed new branding and engagement approaches.</li>
+                                        <li>Enhanced MAA’s internal communication systems through clear templates and staff resources.</li>
+                                        <li>Demonstrated adaptability and initiative in managing shifting project goals and timelines.</li>
+                                </ul>
+                            </div>
+                            <div class="mb-6">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="text-xl font-semibold">Assistant Public Relations Officer</h4>
+                                    <span class="text-sm text-gray-500 font-medium">02/2022 - 03/2024</span>
+                                </div>
+                                <p class="text-gray-600 italic mb-2">Koitaleel Samoei University College - Kenya</p>
+                                <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                                    <li>Developed and implemented public relations campaigns to promote awareness of company products and services.</li>
+                                    <li>Created social media accounts for the institution like Instagram and TikTok.</li>
+                                    <li>Created social media contents and posting them across all social media platforms.</li>
+                                    <li>Report writing.</li>
+                                    <li>Conducted an online survey for data collection.</li>
+                                    <li>Enhanced proficiency in article writing.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-start">
+                                    <h4 class="text-xl font-semibold">Public Relations Intern</h4>
+                                    <span class="text-sm text-gray-500 font-medium">05/2021 - 12/2021</span>
+                                </div>
+                                <p class="text-gray-600 italic mb-2">Wazuri Geomatics Ltd - Kenya</p>
+                                <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                                    <li>Collaborated closely with colleagues in different departments such as sales, marketing and customer service.</li>
+                                    <li>Created campaigns for publicity and identifying opportunities for the company.</li>
+                                    <li>Built and maintained positive relationships with the key stakeholders like journalists.</li>
+                                    <li>Created content for social media platforms.</li>
+                                    <li>Assisted with Event planning and management.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-bold mb-4 text-rose-800">Core Competencies</h3>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                                    <li>Utilizing Search Optimizing Engines (SOE)</li>
+                                    <li>Internal Communications</li>
+                                    <li>Brand Messaging</li>
+                                    <li>Communication strategies</li>
+                                    <li>Analytical skills</li>
+                                </ul <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                                <li>Crisis Management</li>
+                                <li>Press Release Writing</li>
+                                <li>Interpersonal skills</li>
+                                <li>Social media management</li>
+                                <li>Social media campaigns</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="page-section content-section px-6 py-16 md:py-24 flex flex-col justify-start">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="section-heading text-center">Communication services</h2>
+                <div class="space-y-12 md:space-y-16">
+
+                    <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center bg-white p-6 rounded-lg shadow-md">
+                        <div class="md:order-last">
+                            <img src="assets/deliverables/comsimage11.avif" alt="A team working on brand strategy whiteboard" class="w-full h-auto object-cover rounded-md mb-4">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3">Brand Positioning & Narrative Development</h3>
+
+                            <p class="text-gray-700 leading-relaxed mb-4 summary-block">
+                                I specialize in Brand Messaging, helping you articulate your unique value and mission. We'll develop a compelling narrative that ensures every piece of communication speaks with one, unified voice, establishing a clear and powerful market position.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4 full-detail-block hidden-content">
+                                I specialize in Brand Messaging, helping you articulate your unique value and mission. We'll develop a compelling narrative that ensures every piece of communication—from your website to your social media—speaks with one, unified voice, establishing a
+                                clear and powerful market position. My work includes competitor analysis, defining target audience segments, and creating brand voice guidelines to maintain consistency across all platforms.
+                            </p>
+                            <button data-target="#services" class="read-more-btn dedicated-view-btn text-rose-800 font-semibold hover:text-rose-600 transition">Read more</button>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center bg-white p-6 rounded-lg shadow-md">
+                        <div>
+                            <img src="assets/deliverables/comsimage10.jpg" alt="A person working on a screen with SEO keywords" class="w-full h-auto object-cover rounded-md mb-4">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3">Digital Content & SEO Strategy</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 summary-block">
+                                I develop data-driven content roadmaps that incorporate Search Optimizing Engines (SOE) techniques and analytical skills to ensure your messaging achieves high visibility.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4 full-detail-block hidden-content">
+                                I develop data-driven content roadmaps that incorporate Search Optimizing Engines (SOE) techniques and analytical skills to ensure your messaging achieves high visibility. This covers everything from content audits and keyword research to performance
+                                tracking and strategic adjustments. I ensure all digital content is engaging, accessible, and aligned with current search trends to drive organic traffic.
+                            </p>
+                            <button data-target="#services" class="read-more-btn dedicated-view-btn text-rose-800 font-semibold hover:text-rose-600 transition">Read more</button>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center bg-white p-6 rounded-lg shadow-md">
+                        <div class="md:order-last">
+                            <img src="assets/deliverables/comsimage10.jpg" alt="Journalist typing a press release" class="w-full h-auto object-cover rounded-md mb-4">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3">Media Relations & Public Affairs</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 summary-block">
+                                I handle professional Press Release Writing and media pitching. By developing proactive communication strategies, I ensure your key announcements and perspectives are communicated effectively.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4 full-detail-block hidden-content">
+                                I handle professional Press Release Writing and media pitching. By developing proactive communication strategies and building strong relationships with journalists, I ensure your key announcements and perspectives are communicated effectively to the public
+                                and political sphere. This includes developing media kits, managing press conferences, and monitoring media coverage to safeguard your brand's reputation.
+                            </p>
+                            <button data-target="#services" class="read-more-btn dedicated-view-btn text-rose-800 font-semibold hover:text-rose-600 transition">Read more</button>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center bg-white p-6 rounded-lg shadow-md">
+                        <div>
+                            <img src="assets/deliverables/comsimage3.jpg" alt="Typing on a laptop for internal comms" class="w-full h-auto object-cover rounded-md mb-4">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3">Internal communications</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 summary-block">
+                                I develop comprehensive internal communication plans that keep your team informed, motivated, and aligned with organizational goals through various channels.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4 full-detail-block hidden-content">
+                                I develop comprehensive internal communication plans that keep your team informed, motivated, and aligned with organizational goals. From newsletters and intranet content to town halls and employee surveys, I create channels that foster transparency and
+                                engagement across all levels of your organization. My expertise ensures critical information, like policy changes and executive messages, is clearly understood by every team member.
+                            </p>
+                            <button data-target="#services" class="read-more-btn dedicated-view-btn text-rose-800 font-semibold hover:text-rose-600 transition">Read more</button>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center bg-white p-6 rounded-lg shadow-md">
+                        <div class="md:order-last">
+                            <img src="assets/deliverables/comsimage4.jpg" alt="Team collaborating on stakeholder strategy" class="w-full h-auto object-cover rounded-md mb-4">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3">Stakeholder communications</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 summary-block">
+                                I design targeted communication strategies that address the unique needs of different stakeholder groups, ensuring your key messages resonate and build lasting relationships.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4 full-detail-block hidden-content">
+                                Effective stakeholder communication is crucial for organizational success. I design targeted communication strategies that address the unique needs of different stakeholder groups, ensuring your key messages resonate and build lasting relationships. My
+                                approach includes stakeholder mapping, tailored messaging, and ongoing engagement plans. I focus on developing trust and advocacy among investors, partners, government bodies, and the wider community.
+                            </p>
+                            <button data-target="#services" class="read-more-btn dedicated-view-btn text-rose-800 font-semibold hover:text-rose-600 transition">Read more</button>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center bg-white p-6 rounded-lg shadow-md">
+                        <div>
+                            <img src="assets/deliverables/comsimage5.jpg" alt="A phone on a desk, representing crisis comms" class="w-full h-auto object-cover rounded-md mb-4">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3">Crisis communications</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 summary-block">
+                                I help organizations develop comprehensive crisis communication plans, train spokespeople, and manage communications during critical incidents to protect your reputation.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4 full-detail-block hidden-content">
+                                When crisis strikes, having a prepared communication strategy is essential. I help organizations develop crisis communication plans, train spokespeople, and manage communications during critical incidents. My approach focuses on transparency, speed, and
+                                consistency to protect your reputation and maintain stakeholder trust during challenging times. I provide comprehensive planning, scenario testing, and real-time response management.
+                            </p>
+                            <button data-target="#services" class="read-more-btn dedicated-view-btn text-rose-800 font-semibold hover:text-rose-600 transition">Read more</button>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center bg-white p-6 rounded-lg shadow-md">
+                        <div class="md:order-last">
+                            <img src="assets/deliverables/comsimage6.jpg" alt="Person holding a phone, social media management" class="w-full h-auto object-cover rounded-md mb-4">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3">Social media management</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 summary-block">
+                                I develop and implement social media strategies that amplify your brand voice, engage your target audience, and handle all aspects of your social media presence, including running targeted campaigns.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4 full-detail-block hidden-content">
+                                In today's digital landscape, a strong social media presence is essential. I develop and implement social media strategies that amplify your brand voice, engage your target audience, and drive meaningful results. From content creation and community management
+                                to analytics and reporting, I handle all aspects of your social media presence. This includes running targeted social media campaigns and managing platform-specific content like Instagram and TikTok.
+                            </p>
+                            <button data-target="#services" class="read-more-btn dedicated-view-btn text-rose-800 font-semibold hover:text-rose-600 transition">Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="cases" class="page-section content-section max-w-7xl mx-auto px-6 py-16 md:py-24">
+            <h2 class="section-heading text-center mb-12">Case Studies</h2>
+            <p class="text-lg text-center max-w-3xl mx-auto mb-12">
+                Explore my portfolio of successful communication projects. The visual asset below serves as a preview, and the button will open the full, high-quality PDF document in a new tab for viewing.
+            </p>
+
+            <div class="space-y-12">
+
+                <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col">
+
+
+
+                    <h3 class="font-bold text-xl mb-2">1. Internal Communication Tips Poster Set</h3>
+                    <p class="text-base text-gray-700 mb-4">
+                        This set of internal posters was created for My Ability Australia (MAA) to reinforce crucial communication best practices among staff. The goal was to provide a quick, visually digestible reference for internal messaging and client interaction.
+                    </p>
+                    <div class="w-full h-auto overflow-hidden border rounded mb-4 shadow-inner relative max-h-96">
+                        <img src="assets/deliverables/MAA_Communication_Tips_Poster_Set_Fixed.jpg" alt="Communication Tips Poster Preview" class="w-full h-auto object-cover object-top">
+                    </div>
+                    <a href="assets/deliverables/MAA_Communication_Tips_Poster_Set_Fixed.pdf" target="_blank" class="inline-block mt-auto text-center px-4 py-3 bg-rose-800 hover:bg-rose-700 text-white font-semibold rounded cta-button transition duration-200">
+                        <i data-lucide="external-link" class="w-5 h-5 inline mr-2"></i>View Full PDF (Case 1)
+                    </a>
+                </div>
+                </a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col">
+                <h3 class="font-bold text-xl mb-2">2. Internal Newsletter Template</h3>
+                <p class="text-base text-gray-700 mb-4">
+                    Designed a template and generated content for a regular internal newsletter at MAA. This initiative aimed to enhance employee engagement, ensure consistent delivery of executive messages, and keep all staff informed about new policies and achievements.
+                </p>
+                <div class="w-full h-auto overflow-hidden border rounded mb-4 shadow-inner relative max-h-96">
+                    <img src="assets/deliverables/MAA_Internal_Newsletter_Styled.jpg" alt="Internal Newsletter Preview" class="w-full h-auto object-cover object-top">
+                </div>
+                <a href="assets/deliverables/MAA_Internal_Newsletter_Styled.pdf" target="_blank" class="inline-block mt-auto text-center px-4 py-3 bg-rose-800 hover:bg-rose-700 text-white font-semibold rounded cta-button">
+                    <i data-lucide="external-link" class="w-5 h-5 inline mr-2"></i>View Full PDF (Case 2)
+                </a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col">
+                <h3 class="font-bold text-xl mb-2">3. Client FAQ Poster (A4)</h3>
+                <p class="text-base text-gray-700 mb-4">
+                    Developed a clear and accessible Frequently Asked Questions (FAQ) poster for clients. The primary objective was to proactively address common inquiries, improving client self-service and reducing the volume of direct, repetitive service calls.
+                </p>
+                <div class="w-full h-auto overflow-hidden border rounded mb-4 shadow-inner relative max-h-96">
+                    <img src="assets/deliverables/MAA_Client_FAQ_Poster_a4_Logo.jpg" alt="Client FAQ Poster Preview" class="w-full h-auto object-cover object-top">
+                </div>
+                <a href="assets/deliverables/MAA_Client_FAQ_Poster_A4_Logo.pdf" target="_blank" class="inline-block mt-auto text-center px-4 py-3 bg-rose-800 hover:bg-rose-700 text-white font-semibold rounded cta-button">
+                    <i data-lucide="external-link" class="w-5 h-5 inline mr-2"></i>View Full PDF (Case 3)
+                </a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col">
+                <h3 class="font-bold text-xl mb-2">4. Client Referral Form</h3>
+                <p class="text-base text-gray-700 mb-4">
+                    I created a simplified and efficient client referral form. This crucial document was streamlined to improve communication with referring partners, ensuring a smoother client intake process and faster response times for new clients.
+                </p>
+                <div class="w-full h-auto overflow-hidden border rounded mb-4 shadow-inner relative max-h-96">
+                    <img src="assets/deliverables/MAA_Refferal_Form.jpg" alt="Referral Form Preview" class="w-full h-auto object-cover object-top">
+                </div>
+                <a href="assets/deliverables/MAA_Refferal_Form.pdf" target="_blank" class="inline-block mt-auto text-center px-4 py-3 bg-rose-800 hover:bg-rose-700 text-white font-semibold rounded cta-button">
+                    <i data-lucide="external-link" class="w-5 h-5 inline mr-2"></i>View Full PDF (Case 4)
+                </a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col">
+                <h3 class="font-bold text-xl mb-2">5. Social Media Post Templates</h3>
+                <p class="text-base text-gray-700 mb-4">
+                    Developed a series of social media templates for key platforms (like Instagram/Facebook) to standardize the visual brand and ensure accessibility. The strategy focused on creating engaging, informative content that resonates with the disability sector
+                    audience while maintaining a professional and supportive tone.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                    <div class="border rounded shadow-sm overflow-hidden flex justify-center items-center">
+                        <img src="assets/deliverables/MAA Post 1.jfif" alt="Social Media Post Example 1" class="w-full h-auto object-contain">
+                    </div>
+                    <div class="border rounded shadow-sm overflow-hidden flex justify-center items-center">
+                        <img src="assets/deliverables/MAA Post 2.jfif" alt="Social Media Post Example 2" class="w-full h-auto object-contain">
+                    </div>
+                    <div class="border rounded shadow-sm overflow-hidden flex justify-center items-center">
+                        <img src="assets/deliverables/MAA Post 3.jfif" alt="Social Media Post Example 3" class="w-full h-auto object-contain">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col">
+                <h3 class="font-bold text-xl mb-2">6. Policy Communication Poster (A3)</h3>
+                <p class="text-base text-gray-700 mb-4">
+                    *Project Overview:* Designed an accessible A3 poster template for communicating key company policies to staff and clients. The focus was on translating complex policy documents into a brief, easy-to-read, and visually engaging format.
+                </p>
+                <div class="w-full h-auto overflow-hidden border rounded mb-4 shadow-inner relative max-h-96">
+                    <img src="assets/deliverables/MAA_Policy_Poster_A3_Logo.png" alt="Policy Poster Preview" class="w-full h-auto object-cover object-top">
+                </div>
+                <a href="assets/deliverables/MAA_Policy_Poster_A3_Logo.pdf" target="_blank" class="inline-block mt-auto text-center px-4 py-3 bg-rose-800 hover:bg-rose-700 text-white font-semibold rounded cta-button">
+                    <i data-lucide="external-link" class="w-5 h-5 inline mr-2"></i>View Full PDF (Case 6)
+                </a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col">
+                <h3 class="font-bold text-xl mb-2">7. Client Family FAQs Document</h3>
+                <p class="text-base text-gray-700 mb-4">
+                    Developed a dedicated FAQ document aimed at the families and caregivers of clients. The purpose was to provide clear, empathetic, and organized answers to questions frequently raised by client support networks.
+                </p>
+                <div class="w-full h-auto overflow-hidden border rounded mb-4 shadow-inner relative max-h-96">
+                    <img src="assets/deliverables/MAA_Client_Family_FAQs.png" alt="Client Family FAQs Preview" class="w-full h-auto object-cover object-top">
+                </div>
+                <a href="assets/deliverables/MAA_Client_Family_FAQs.pdf" target="_blank" class="inline-block mt-auto text-center px-4 py-3 bg-rose-800 hover:bg-rose-700 text-white font-semibold rounded cta-button transition duration-200">
+                    <i data-lucide="external-link" class="w-5 h-5 inline mr-2"></i>View Full PDF (Case 7)
+                </a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col">
+                <h3 class="font-bold text-xl mb-2">8. Internal Staff Shoutout System Mockup</h3>
+                <p class="text-base text-gray-700 mb-4">
+                    Created a visual mockup for an internal "shoutout" or recognition system. This tool was designed to boost staff morale and promote a culture of appreciation and positive internal communication.
+                </p>
+                <div class="w-full h-auto overflow-hidden border rounded mb-4 shadow-inner relative max-h-96">
+                    <img src="assets/deliverables/MAA_Staff_Shoutout_Mockup.png" alt="Staff Shoutout Mockup Preview" class="w-full h-auto object-cover object-top">
+                </div>
+                <a href="assets/deliverables/MAA_Staff_Shoutout_Mockup.pdf" target="_blank" class="inline-block mt-auto text-center px-4 py-3 bg-rose-800 hover:bg-rose-700 text-white font-semibold rounded cta-button">
+                    <i data-lucide="external-link" class="w-5 h-5 inline mr-2"></i>View Full PDF (Case 8)
+                </a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col">
+                <h3 class="font-bold text-xl mb-2">9. Video Communication Storyboards</h3>
+                <p class="text-base text-gray-700 mb-4">
+                    Developed detailed storyboards for a series of planned organizational videos. This ensured the video content was strategically aligned with communication goals, efficient to produce, and delivered clear, concise narratives.
+                </p>
+                <div class="w-full h-auto overflow-hidden border rounded mb-4 shadow-inner relative max-h-96">
+                    <img src="assets/deliverables/MAA_Video_Storyboards.png" alt="Video Storyboards Preview" class="w-full h-auto object-cover object-top">
+                </div>
+                <a href="assets/deliverables/MAA_Video_Storyboards.pdf" target="_blank" class="inline-block mt-auto text-center px-4 py-3 bg-rose-800 hover:bg-rose-700 text-white font-semibold rounded cta-button">
+                    <i data-lucide="external-link" class="w-5 h-5 inline mr-2"></i>View Full PDF (Case 9)
+                </a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col">
+                <h3 class="font-bold text-xl mb-2">10. Client Journey Map (Horizontal)</h3>
+                <p class="text-base text-gray-700 mb-4">
+                    Created a comprehensive, horizontally-oriented map detailing the client's end-to-end experience. This visual communication tool helps internal teams identify key touchpoints, pain points, and opportunities for service improvement.
+                </p>
+                <div class="w-full h-auto overflow-hidden border rounded mb-4 shadow-inner relative max-h-96">
+                    <img src="assets/deliverables/MAA_Client_Journey_Horizontal.jpg" alt="Client Journey Horizontal Preview" class="w-full h-auto object-cover object-top">
+                </div>
+                <a href="assets/deliverables/MAA_Client_Journey_Horizontal.pdf" target="_blank" class="inline-block mt-auto text-center px-4 py-3 bg-rose-800 hover:bg-rose-700 text-white font-semibold rounded cta-button">
+                    <i data-lucide="external-link" class="w-5 h-5 inline mr-2"></i>View Full PDF (Case 10)
+                </a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col">
+                <h3 class="font-bold text-xl mb-2">11. Client Journey Map (Vertical)</h3>
+                <p class="text-base text-gray-700 mb-4">
+                    Designed a vertically-oriented version of the client journey map, optimized for mobile viewing or tall display screens. This provides an alternative, accessible view of the client's service lifecycle for various internal stakeholders.
+                </p>
+                <div class="w-full h-auto overflow-hidden border rounded mb-4 shadow-inner relative max-h-96">
+                    <img src="assets/deliverables/MAA_Client_Journey_Vertical.png" alt="Client Journey Vertical Preview" class="w-full h-auto object-cover object-top">
+                </div>
+                <a href="assets/deliverables/MAA_Client_Journey_Vertical.pdf" target="_blank" class="inline-block mt-auto text-center px-4 py-3 bg-rose-800 hover:bg-rose-700 text-white font-semibold rounded cta-button">
+                    <i data-lucide="external-link" class="w-5 h-5 inline mr-2"></i>View Full PDF (Case 11)
+                </a>
+            </div>
+
+            </div>
+        </section>
+
+
+        <section id="contact" class="page-section content-section bg-gray-50 px-6 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="section-heading text-center">Contact me</h2>
+                <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
+                    <div class="space-y-8 p-6 bg-white rounded-lg shadow-xl h-full flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-rose-800 mb-4">Reach Out Directly</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <i data-lucide="mail" class="w-6 h-6 text-rose-800 flex-shrink-0"></i>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-500">Email Address</p>
+                                    <a href="mailto:tanuihilda27@gmail.com" class="text-lg font-semibold hover:text-rose-600 transition">tanuihilda27@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i data-lucide="phone" class="w-6 h-6 text-rose-800 flex-shrink-0"></i>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-500">Phone Number</p>
+                                    <a href="tel:+61451113840" class="text-lg font-semibold hover:text-rose-600 transition">+61 451 113 840</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-rose-800 flex-shrink-0"></i>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-500">Location</p>
+                                    <p class="text-lg font-semibold">Para Vista, SA, Australia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-xl">
+                        <form action="#" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-rose-500 focus:border-rose-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email address *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-rose-500 focus:border-rose-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message *</label>
+                                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-rose-500 focus:border-rose-500"></textarea>
+                            </div>
+                            <button type="submit" class="inline-block px-8 py-3 rounded-md text-white font-semibold cta-button">Submit form</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        lucide.createIcons();
+
+        // 1. DOM Elements
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOpenBtn = document.getElementById('menu-open-btn');
+        const menuCloseBtn = document.getElementById('menu-close-btn');
+        const allSections = document.querySelectorAll('.content-section');
+        const fullViewLinks = document.querySelectorAll('.full-view-link');
+        const dedicatedViewButtons = document.querySelectorAll('.dedicated-view-btn');
+
+        // Content Blocks
+        const resumeSummary = document.getElementById('resume-summary');
+        const resumeFull = document.getElementById('resume-full');
+        const summaryBlocks = document.querySelectorAll('.summary-block');
+        const fullDetailBlocks = document.querySelectorAll('.full-detail-block');
+        const readMoreButtons = document.querySelectorAll('.read-more-btn');
+
+        // 2. Core Logic Functions
+
+        /**
+         * Switches the page to the Full Scrollable View: shows all sections and summary content.
+         * @param {string} targetId - The #ID of the section to scroll to (e.g., '#home').
+         */
+        function showFullView(targetId) {
+            allSections.forEach(section => {
+                section.classList.remove('hidden-section');
+            });
+
+            // Show Summary Content Blocks and Buttons, Hide Full Detail
+            if (resumeSummary && resumeFull) {
+                resumeSummary.classList.remove('hidden-content');
+                resumeFull.classList.add('hidden-content');
+            }
+            summaryBlocks.forEach(block => block.classList.remove('hidden-content'));
+            fullDetailBlocks.forEach(block => block.classList.add('hidden-content'));
+            readMoreButtons.forEach(button => button.classList.remove('hidden-content'));
+
+            // Use browser's native anchor scrolling
+            window.location.hash = targetId;
+        }
+
+        /**
+         * Switches the page to the Dedicated Standalone View: hides all sections except the target and shows full content.
+         * @param {string} targetId - The #ID of the section to display (e.g., '#resume').
+         */
+        function showDedicatedView(targetId) {
+            allSections.forEach(section => {
+                if ('#' + section.id === targetId) {
+                    section.classList.remove('hidden-section');
+                } else {
+                    section.classList.add('hidden-section');
+                }
+            });
+
+            // Toggle Content Blocks based on dedicated page
+            if (targetId === '#resume') {
+                if (resumeSummary && resumeFull) {
+                    resumeSummary.classList.add('hidden-content'); // Hide summary
+                    resumeFull.classList.remove('hidden-content'); // Show full detail
+                }
+            } else if (targetId === '#services') {
+                // Show full detail text for services and hide buttons
+                summaryBlocks.forEach(block => block.classList.add('hidden-content'));
+                fullDetailBlocks.forEach(block => block.classList.remove('hidden-content'));
+                readMoreButtons.forEach(button => button.classList.add('hidden-content'));
+
+            } else {
+                // For ABOUT, CASES, CONTACT (no summary/full split needed), ensure standard blocks are default (full detail)
+                summaryBlocks.forEach(block => block.classList.add('hidden-content'));
+                fullDetailBlocks.forEach(block => block.classList.remove('hidden-content'));
+                readMoreButtons.forEach(button => button.classList.add('hidden-content'));
+
+                // Revert RESUME to full view if we navigate to another dedicated page (it was set to full when first shown)
+                if (resumeSummary && resumeFull) {
+                    // This block ensures if you click ABOUT, it doesn't accidentally revert RESUME to summary view
+                    // when the resume section is hidden. This ensures when you click RESUME again, it starts on full.
+                    resumeSummary.classList.add('hidden-content');
+                    resumeFull.classList.remove('hidden-content');
+                }
+            }
+
+            // Force scroll to the top of the dedicated section
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView();
+            }
+        }
+
+        // 3. Event Listeners
+
+        // A. Full View Links (HOME only)
+        fullViewLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                showFullView(targetId);
+                // Close mobile menu on click
+                mobileMenu.classList.remove('translate-x-0');
+                mobileMenu.classList.add('translate-x-full');
+            });
+        });
+
+        // B. Dedicated View Links (ABOUT, RESUME, SERVICES, CASES, CONTACT)
+        document.querySelectorAll('.dedicated-view-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                showDedicatedView(targetId);
+                // Close mobile menu on click
+                mobileMenu.classList.remove('translate-x-0');
+                mobileMenu.classList.add('translate-x-full');
+            });
+        });
+
+
+        // C. Internal Dedicated Buttons (Request Full Resume, Read More, View Case Details)
+        dedicatedViewButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Target is read from the data-target attribute (e.g., data-target="#resume")
+                const targetId = this.getAttribute('data-target');
+                if (targetId) {
+                    showDedicatedView(targetId);
+                }
+            });
+        });
+
+        // D. Mobile Menu Open/Close
+        menuOpenBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+        });
+
+        menuCloseBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('translate-x-full');
+        });
+
+
+        // E. Initial Load: Determine initial view based on URL hash
+        window.addEventListener('load', () => {
+            const hash = window.location.hash;
+
+            // List of sections that should appear in dedicated view
+            const dedicatedSections = ['#about', '#resume', '#services', '#cases', '#contact'];
+
+            if (hash && dedicatedSections.includes(hash)) {
+                showDedicatedView(hash);
+            } else {
+                // Default or any other link (HOME) should show the full view
+                showFullView(hash || '#home');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
